@@ -17,4 +17,5 @@ function convert() {
     document.getElementById("binaryResult").innerText = binary;
     document.getElementById("hexadecimalResult").innerText = hexadecimal;
     document.getElementById("octalResult").innerText = octal;
+    document.getElementById("decimalInput").value = "";
 }
