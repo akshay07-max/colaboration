@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Background Image with Opacity</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="background-container">
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#destination">Destination</a></li>
-          <li><a href="#route">Route</a></li>
-          <li><a href="#final-destination">Final Destination</a></li>
-        </ul>
-      </nav>
-      <h1>Helping Engineers</h1>
-      <p>The Decimal To All Conversions(Binary, Hex-Decimal, Octal)</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decimal Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Decimal Number Converter</h1>
+        <div class="converter">
+            <label for="decimalInput">Enter Decimal Number:</label>
+            <input type="number" id="decimalInput" placeholder="Enter a number...">
+            <button onclick="convert()">Convert</button>
+        </div>
+        <div class="results">
+            <p><strong>Binary:</strong> <span id="binaryResult">-</span></p>
+            <p><strong>Hexadecimal:</strong> <span id="hexadecimalResult">-</span></p>
+            <p><strong>Octal:</strong> <span id="octalResult">-</span></p>
+        </div>
     </div>
-  </body>
+    <script src="main.js"></script>
+</body>
 </html>
